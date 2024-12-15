@@ -1,1 +1,1 @@
-This project is about writting and executing the simple ETL pipeline. 
+This project is about coding and executing the simple ETL pipeline. 
