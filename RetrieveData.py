@@ -12,7 +12,7 @@ def transform(df):
     return df
 
 def load(df):
-    alchemyEngine = create_engine('postgresql+psycopg2://postgres:nik123@127.0.0.1:5434/painting',pool_recycle=3600)
+    alchemyEngine = create_engine('postgresql+psycopg2://postgres:password@127.0.0.1:5434/database_name_or_table_name',pool_recycle=3600)
     conn = alchemyEngine.connect()
     data = df.to_sql('work', con=conn, if_exists = 'replace', index = False)
     dis = pd.read_sql('work',conn)
